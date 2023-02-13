@@ -705,7 +705,7 @@ class Firebase_Database with ChangeNotifier {
                                           ),
                                         ),
                                       ),
-                                      Card(
+                                      /*Card(
                                         shape: RoundedRectangleBorder(
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -737,7 +737,7 @@ class Firebase_Database with ChangeNotifier {
                                                 fontWeight: FontWeight.w500),
                                           ),
                                         ),
-                                      ),
+                                      ),*/
                                       Card(
                                         shape: RoundedRectangleBorder(
                                           borderRadius:

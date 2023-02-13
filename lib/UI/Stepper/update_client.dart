@@ -431,8 +431,8 @@ class _UpdateClientState extends State<UpdateClient> {
                       ),
                       border: OutlineInputBorder(),
                       filled: true,
-                      labelText: 'Enter Email Id :',
-                      hintText: 'Email Id',
+                      labelText: 'Enter Official Email Id :',
+                      hintText: 'Office Email Id',
                       prefixIcon: Align(
                         widthFactor: 1.0,
                         heightFactor: 1.0,
@@ -453,7 +453,7 @@ class _UpdateClientState extends State<UpdateClient> {
                     keyboardType: TextInputType.emailAddress,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please Enter Email ID';
+                        return 'Please Enter Official Email ID';
                       }
                       return null;
                     },
@@ -1194,7 +1194,7 @@ class _UpdateClientState extends State<UpdateClient> {
                   padding: EdgeInsets.only(bottom: 30.0),
                 ),
 
-                Card(
+               /* Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
                   elevation: 15,
@@ -1239,8 +1239,7 @@ class _UpdateClientState extends State<UpdateClient> {
                 ),
                 const Padding(
                   padding: EdgeInsets.only(bottom: 30.0),
-                ),
-
+                ),*/
                 Card(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
@@ -2106,7 +2105,7 @@ class _UpdateClientState extends State<UpdateClient> {
                   child: SizedBox(
                     width: double.infinity,
                     child: TextField(
-                      controller: cityValue1,
+                      controller: stateValue1,
                       readOnly: true,
                       /* onChanged: (values){
                         setState(() {
@@ -2324,7 +2323,7 @@ class _UpdateClientState extends State<UpdateClient> {
                   padding: EdgeInsets.all(6),
                 ),
 
-                Card(
+                /*Card(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
@@ -2336,11 +2335,11 @@ class _UpdateClientState extends State<UpdateClient> {
                     child: TextField(
                       controller: companyMail1,
                       readOnly: true,
-                      /* onChanged: (values){
+                      *//* onChanged: (values){
                         setState(() {
                           genderValue = values!;
                         });
-                      },*/
+                      },*//*
                       //expands: true,
                       decoration: const InputDecoration(
                         fillColor: Colors.transparent,
@@ -2379,7 +2378,7 @@ class _UpdateClientState extends State<UpdateClient> {
 
                 const Padding(
                   padding: EdgeInsets.all(6),
-                ),
+                ),*/
 
                 Card(
                   shape: RoundedRectangleBorder(
@@ -2744,25 +2743,26 @@ class _UpdateClientState extends State<UpdateClient> {
       //drawer: ,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Center(child: Text('Crave Client Update')),
-        actions: <Widget>[
+        title:
+            const Text('Crave Client Update'),
+        /*actions: <Widget>[
           IconButton(
             icon: const Icon(
               Icons.document_scanner,
               color: Colors.white,
             ),
             onPressed: () {
-              /*scanQRCode();
+              *//*scanQRCode();
               qr.value = TextEditingValue(
                 text: getResult,
                 selection: TextSelection.fromPosition(
                   TextPosition(offset: getResult.length),
                 ),
-              );*/
+              );*//*
               // do something
             },
           ),
-        ],
+        ],*/
         backgroundColor: const Color(0xFF00D3FF),
       ),
       //
