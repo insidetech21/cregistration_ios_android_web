@@ -65,7 +65,7 @@ class _ViewCustomerState extends State<ViewCustomer> {
     final fr = Provider.of<Firebase_Database>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
-        title: Text('Client Data'),
+        title: const Text('Client Data'),
         backgroundColor: const Color(0xFF00D3FF),
       ),
       body: fr.Listallusers(),

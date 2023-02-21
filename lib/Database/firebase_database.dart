@@ -8,7 +8,8 @@ import '../UI/Stepper/update_client.dart';
 // Code Updated by Vasant and Mohnish
 
 class Firebase_Database with ChangeNotifier {
-  final docuser = FirebaseFirestore.instance.collection('guest').doc();
+  // final docuser = FirebaseFirestore.instance.collection('guest').doc();
+  final docuser = FirebaseFirestore.instance.collection('guest');
 
   final CollectionReference _reff =
       FirebaseFirestore.instance.collection('guest');
@@ -59,7 +60,8 @@ class Firebase_Database with ChangeNotifier {
       comments: comments,
     );
     final json = customer.toJson();
-    await docuser.set(json);
+    // await docuser.set(json);
+    await docuser.add(json);
     notifyListeners();
   }
 

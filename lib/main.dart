@@ -4,6 +4,7 @@ import 'package:craveiospro/Database/firebase_database.dart';
 import 'package:craveiospro/SelectPhotoOptionsScreen.dart';
 import 'package:craveiospro/UI/Stepper/homepage.dart';
 import 'package:craveiospro/UI/dashboard_screen.dart';
+import 'package:craveiospro/UI/register.dart';
 import 'package:craveiospro/utility.dart';
 import 'package:csc_picker/csc_picker.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -19,11 +20,9 @@ import 'custom_date_picker_form_field.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart' as p;
 import 'package:flutter/foundation.dart' show kIsWeb;
-
 import 'firebase_options.dart';
 
 // Code Updated by Vasant and Mohnish
-
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -92,7 +91,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         debugShowCheckedModeBanner: false,
-        home: kIsWeb? const MyHomePage():const DashboardScreen()
+        home: kIsWeb? const MyHomePage():const Register()
       ),
     );
   }

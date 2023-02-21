@@ -2139,7 +2139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: EdgeInsets.all(6),
               ),
 
-              Card(
+            /*  Card(
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
@@ -2151,11 +2151,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: TextField(
                     controller: companyMail,
                     readOnly: true,
-                    /* onChanged: (values){
+                    *//* onChanged: (values){
                         setState(() {
                           genderValue = values!;
                         });
-                      },*/
+                      },*//*
                     //expands: true,
                     decoration: const InputDecoration(
                       fillColor: Colors.transparent,
@@ -2194,7 +2194,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               const Padding(
                 padding: EdgeInsets.all(6),
-              ),
+              ),*/
 
               Card(
                 shape: RoundedRectangleBorder(
